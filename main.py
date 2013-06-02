@@ -53,9 +53,9 @@ def parseProvince(shop):
 
 def main():
     for tag in tags:
-	#soup = BeautifulSoup(urllib.urlopen("http://creditcard.bankcomm.com/resource/cc_bankcomm_com/upload/activity/article//2012_4/12_21/legou_list(2).html#" + tag));
+        soup = BeautifulSoup(urllib.urlopen("http://creditcard.bankcomm.com/resource/cc_bankcomm_com/upload/activity/article//2012_4/12_21/legou_list(2).html#" + tag));
 	#soup = BeautifulSoup(open("old.html"));
-	soup = BeautifulSoup(open("new.html"));
+	#soup = BeautifulSoup(open("new.html"));
 	i = 1;
 	while True: 
 	    node = soup.find("td", id="a" + str(i));
